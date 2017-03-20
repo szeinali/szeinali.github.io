@@ -1,1 +1,0 @@
-# szeinali.github.io
