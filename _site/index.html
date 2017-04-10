@@ -18,7 +18,17 @@
   <body>
       <div id="particles-js">
   <div class="content">
+    <script>
+  document.addEventListener("DOMContentLoaded", function(){
+    Typed.new(".element", {
+      strings: ["First sentence.", "Second sentence."],
+      typeSpeed: 0
+    });
+  });
+</script>
       <h1>
+        <span class="element"></span>
+
         <span class="site-title">Sahand Zeinali</span>
         <span class="site-description">Software Developer</span>
       </h1>
@@ -100,6 +110,7 @@
       </section>
         
       <footer class="footer">
+
     <p>&copy; Sahand Zeinali</p>
     <p>Build with Jekyll and <span class="love">❤</span> by <a href="https://nrandecker.github.io">Nathan Randecker</a></p>
 </footer>
