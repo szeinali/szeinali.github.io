@@ -10,13 +10,18 @@
 <script>
 	document.addEventListener("DOMContentLoaded", function(){
 		Typed.new(".element", {
-			strings: ["Software ", "Mobile ", "Full Stack "],
-			typeSpeed: 5,
+			strings: ["Software ", "Mobile ", "Full ^Stack "],
+			typeSpeed: 0,
 			loop: true,
+			attr: null,
+			showCursor: false
+			onStringTyped: function() {
+				strings: ["Developer"]
+			},
 
 		});
 	});
 </script>
-Developer
+
 </div>
 {% include google-analytics.html %}

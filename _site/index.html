@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>
-  Sahand Zeinali</title>
+
+  <title>Sahand Zeinali</title>
   <meta name="description" content="Sahand Zeinali">
+
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
@@ -14,8 +15,8 @@
 </head>
 
   <body>
-    <div id="particles-js">
-      <div class="content">
+      <div id="particles-js">
+  <div class="content">
       <h1>
         <span class="site-title">Sahand Zeinali</span>
         <span class="site-description element"></span>
@@ -98,14 +99,31 @@
       </section>
         
       <footer class="footer">
-
     <p>&copy; Sahand Zeinali</p>
     <p>Build with Jekyll and <span class="love">❤</span> by <a href="https://nrandecker.github.io">Nathan Randecker</a></p>
-    <p>Self typing by <a href="https://github.com/mattboldt">Matt Boldt</a></p>
 </footer>
 <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="/assets/js/sweet-scroll.min.js"></script>
 <script src="/assets/js/main.js"></script>
+<script src="assets/js/typed.js"></script>
+<div>
+<script>
+	document.addEventListener("DOMContentLoaded", function(){
+		Typed.new(".element", {
+			strings: ["Software ", "Mobile ", "Full ^Stack "],
+			typeSpeed: 0,
+			loop: true,
+			attr: null,
+			showCursor: false
+			onStringTyped: function() {
+				strings: ["Developer"]
+			},
+
+		});
+	});
+</script>
+
+</div>
 <!-- Google Analytics -->
 
 <script>
