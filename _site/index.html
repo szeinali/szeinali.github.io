@@ -15,22 +15,20 @@
 </head>
 
   <body>
-    <span id="typed"></span>
-    <script src="jquery.js"></script>
     <script src="typed.js"></script>
-    <script>
-    $(function(){
-      $("#typed").typed({
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+      Typed.new('.element', {
         strings: ["First sentence.", "Second sentence."],
         typeSpeed: 0
       });
-    });
-    </script>
+  });
+</script>
     <div id="particles-js">
       <div class="content">
       <h1>
         <span class="site-title">Sahand Zeinali</span>
-        <span class="site-description">Software Developer</span>
+        <span class="site-description element"></span>
       </h1>
       <div class="icons-header">
         <a aria-label="Send email" href="mailto:szeinali@hawk.iit.edu"><i class="icon fa fa-envelope"></i></a>
