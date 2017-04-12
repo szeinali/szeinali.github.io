@@ -10,8 +10,14 @@
 	document.addEventListener("DOMContentLoaded", function(){
 		Typed.new(".element", {
 			strings: ["Software Developer ", "Mobile ", "Full Stack "],
-			typeSpeed: 0
+			typeSpeed: 10
 		});
+		.typed-cursor{
+			opacity: 1;
+			-webkit-animation: blink 0.7s infinite;
+			-moz-animation: blink 0.7s infinite;
+			animation: blink 0.7s infinite;
+}
 	});
 </script>
 {% include google-analytics.html %}
