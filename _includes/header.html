@@ -4,13 +4,12 @@
         <span class="site-title">{{site.username}}</span>
         <span id="typed2"></span>
         <script>
-          var typed2 = new Typed('#typed2', {
-            strings: ['Some <i>strings</i> with', 'Some <strong>HTML</strong>', 'Chars &times; &copy;'],
-            typeSpeed: 0,
-            backSpeed: 0,
-            fadeOut: true,
-            loop: true
-          });
+          import Typed from 'typed.js';
+          var options = {
+            strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
+            typeSpeed: 40
+          }
+          var typed = new Typed(".element", options);
         </script>
 
       </h1>
