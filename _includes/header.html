@@ -2,21 +2,20 @@
   <div class="content">
       <h1>
         <span class="site-title">{{site.username}}</span>
-        <div class="site-description element">
-          <span id="typedfade" style="white-space:pre;"></span>
-        </div>
+        <script src="assets/js/typed.js"></script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function(){
+          Typed.new(".element", {
+            strings: ["Software Developer","^","Coffee Drinker","^", "Mobile Developer"," ","Book ^Reader", " ", "Full ^Stack Developer", " ", "Pasta Lover"],
+            typeSpeed: 2,
+            loop: true,
+            startDelay: 0,
+            attr: null,
+            showCursor: false
+            });
+           });
+          </script>
       </h1>
-      <pre>
-        <code class="javascript">
-          var typedfade = new Typed('#typedfade', {
-          strings: ['Some &lt;i&gt;strings&lt;/i&gt; with', 'Some &lt;strong&gt;HTML&lt;/strong&gt;', 'Chars &amp;times; &amp;copy;'],
-          typeSpeed: 0,
-          backSpeed: 0,
-          fadeOut: true,
-          loop: true
-        });
-        </code>
-      </pre>
     
       <div class="icons-header">
         <a aria-label="Send email" href="mailto:{{site.email}}"><i class="icon fa fa-envelope"></i></a>
