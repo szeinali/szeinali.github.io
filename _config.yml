@@ -1,6 +1,18 @@
 # Site settings
 title: Sahand Zeinali
 description: Sahand Zeinali
+<script>
+	document.addEventListener("DOMContentLoaded", function(){
+		Typed.new(".element", {
+			strings: ["Software Developer","^","Coffee Drinker","^", "Mobile Developer"," ","Book ^Reader", " ", "Full ^Stack Developer", " ", "Pasta Lover"],
+			typeSpeed: 2,
+			loop: true,
+			startDelay: 0,
+			attr: null,
+			showCursor: false
+		});
+	});
+</script>
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
