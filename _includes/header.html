@@ -2,18 +2,18 @@
   <div class="content">
       <h1>
         <span class="site-title">{{site.username}}</span>
+        <span id="typedfade"></span>
         <span class="site-description element">{{site.user_title}}</span>
       </h1>
       <script>
-      var typed = new Typed(".element", {
-        strings: ['Some &lt;i&gt;strings&lt;/i&gt; with', 'Some &lt;strong&gt;HTML&lt;/strong&gt;', 'Chars &amp;times; &amp;copy;'],
-        typeSpeed: 0,
-        backSpeed: 0,
-        fadeOut: true,
-        loop: true
-      });
+        var typedfade = new Typed("#typedfade", {
+          strings: ['Some &lt;i&gt;strings&lt;/i&gt; with', 'Some &lt;strong&gt;HTML&lt;/strong&gt;', 'Chars &amp;times; &amp;copy;'],
+          typeSpeed: 0,
+          backSpeed: 0,
+          fadeOut: true,
+          loop: true
+        });
       </script>
-      <span id="typed"></span>
     
       <div class="icons-header">
         <a aria-label="Send email" href="mailto:{{site.email}}"><i class="icon fa fa-envelope"></i></a>
