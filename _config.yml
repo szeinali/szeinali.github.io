@@ -1,11 +1,5 @@
 # Site settings
-import Typed from 'typed.js';
-var options = {
-  strings: ["<i>First</i> sentence.", "&amp; a second sentence."],
-  typeSpeed: 40
-}
-var typed = new Typed(".element", options);
-title: Sahand Zeinali ${typed}
+title: Sahand Zeinali
 description: Sahand Zeinali
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
