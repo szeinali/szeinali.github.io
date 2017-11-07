@@ -4,18 +4,17 @@
         <span class="site-title">{{site.username}}</span>
         <script src="assets/js/typed.js"></script>
         <script>
-        document.addEventListener("DOMContentLoaded", function(){
-          Typed.new(".element", {
-            strings: ["Software Developer","^","Coffee Drinker","^", "Mobile Developer"," ","Book ^Reader", " ", "Full ^Stack Developer", " ", "Pasta Lover"],
-            typeSpeed: 2,
-            loop: true,
-            startDelay: 0,
-            attr: null,
-            showCursor: false
-            });
-           });
-          </script>
+          var typed = new Typed('.element', {
+          stringsElement: '#typed-strings'
+        });
+        </script>
+        <div id="typed-strings">
+          <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+          <p>It <em>types</em> out sentences.</p>
+        </div>
+      <span id="typed"></span>
       </h1>
+      
     
       <div class="icons-header">
         <a aria-label="Send email" href="mailto:{{site.email}}"><i class="icon fa fa-envelope"></i></a>
