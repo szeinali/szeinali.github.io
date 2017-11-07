@@ -7,7 +7,27 @@
 
   <title>Sahand Zeinali</title>
 
-  <meta name="description" content="Sahand Zeinali">
+  <hr>
+
+  <h2 id="fade">Fade Out</h2>
+  <div class="type-wrap">
+    <span id="typed2" style="white-space:pre;"></span>
+  </div>
+  <button class="loop2">Toggle Loop</button>
+
+  <pre>
+    <code class="javascript">
+  var typed2 = new Typed('#typed2', {
+    strings: ['Some &lt;i&gt;strings&lt;/i&gt; with', 'Some &lt;strong&gt;HTML&lt;/strong&gt;', 'Chars &amp;times; &amp;copy;'],
+    typeSpeed: 0,
+    backSpeed: 0,
+    fadeOut: true,
+    loop: true
+  });
+    </code>
+  </pre>
+
+
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,20 +40,6 @@
   <div class="content">
       <h1>
         <span class="site-title">Sahand Zeinali</span>
-	 <script src="assets/js/typed.js"></script>
-	<div>
-	<script>
-	document.addEventListener("DOMContentLoaded", function(){
-		Typed.new(".element", {
-			strings: ["Software ", "Mobile ", "Full ^Stack "],
-			typeSpeed: 0,
-			loop: true,
-			attr: null,
-			showCursor: false
-			onStringTyped: function() {
-				strings: ["Developer"]},});});
-	</script>
-	</div>
         <span class="site-description element">Developer</span>
       </h1>
       <div class="icons-header">
@@ -98,7 +104,7 @@
   </div>
   <div class="row user-projects">
     <div class="six columns">
-      <img alt="mountains" src="/assets/img/skate.jpg" />
+      <img alt="features" src="/assets/img/features.png" />
     </div>
     <div class="six columns">
       <h5> Machine Learning Project </h5>
