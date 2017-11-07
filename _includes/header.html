@@ -4,6 +4,23 @@
         <span class="site-title">{{site.username}}</span>
         <span class="site-description element">{{site.user_title}}</span>
       </h1>
+      <h2 id="fade">Fade Out</h2>
+        <div class="type-wrap">
+          <span id="typed2" style="white-space:pre;"></span>
+        </div>
+      <button class="loop2">Toggle Loop</button>
+      <pre>
+      <code class="javascript">
+        var typed2 = new Typed('#typed2', {
+        strings: ['Some &lt;i&gt;strings&lt;/i&gt; with', 'Some &lt;strong&gt;HTML&lt;/strong&gt;', 'Chars &amp;times; &amp;copy;'],
+        typeSpeed: 0,
+        backSpeed: 0,
+        fadeOut: true,
+        loop: true
+        });
+      </code>
+      </pre>
+    
       <div class="icons-header">
         <a aria-label="Send email" href="mailto:{{site.email}}"><i class="icon fa fa-envelope"></i></a>
         <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{site.twitter_username}}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
