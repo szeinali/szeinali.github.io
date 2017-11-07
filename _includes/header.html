@@ -2,7 +2,15 @@
   <div class="content">
       <h1>
         <span class="site-title">{{site.username}}</span>
-        <span id="typed2" style="white-space:pre;"></span>
+        <script>
+          var typed2 = new Typed('#typed2', {
+            strings: ['Some <i>strings</i> with', 'Some <strong>HTML</strong>', 'Chars &times; &copy;'],
+            typeSpeed: 0,
+            backSpeed: 0,
+            fadeOut: true,
+            loop: true
+          });
+        </script>
       </h1>
       
     
