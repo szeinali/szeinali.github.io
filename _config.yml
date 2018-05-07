@@ -1,7 +1,7 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+title:              Sand Zeinali
+bio:                'Programmer'
+description:        "My name is Sahand Zeinali. My friends also refer to me as Sand"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
@@ -26,7 +26,7 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+disqus_shortname:   szeinali
 
 # Social
 # if you don't have any of social below, comment the line.
@@ -39,10 +39,10 @@ disqus_shortname:   taylantatli
 #bing-verify:
 #email:
 twitter:            TheSandCloud
-facebook:           username
-github-url:         username
+#facebook:           username
+github-url:         szeinali
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+linkedin:          szeinali
 #xing:              username
 instagram:          sandcloud
 #lastfm:            username
@@ -50,7 +50,7 @@ instagram:          sandcloud
 #medium:            '@username'
 #pinterest:         username
 #foursquare:        username
-steam:              username
+#steam:              username
 #dribbble:          username
 #youtube:           username
 #youtube-channel:   channel
