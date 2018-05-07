@@ -4,7 +4,7 @@ bio:                'Programmer, Bike Rider & Coffee Drinker'
 description:        "My name is Sahand Zeinali. My friends also refer to me as Sand"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/upd.JPG'
+logo:               'assets/img/updated.JPG'
 background:         'assets/img/roses.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
