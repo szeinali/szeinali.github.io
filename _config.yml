@@ -1,7 +1,7 @@
 
 title: My Resume
 url: 'http://szeinali.com'
-baseurl: '/PanelCV' #change it according to your repository name
+# baseurl: '/PanelCV' #change it according to your repository name
 
 
 
@@ -12,11 +12,11 @@ location: Chicago , USA
 
 
 ## Social Profiles
-facebook: http://www.facebook.com  ## your facebook account url
+# facebook: http://www.facebook.com  ## your facebook account url
 twitter: http://www.twitter.com/TheSandCloud  ## your twitter account url
-linkedin: http://www.linkedin.com  ## your linkedin account url
-dribbble: http://www.dribble.com  ## you dribbble account url
-foursquare: http://www.foursquare.com  ## your foursquare account url
+linkedin: http://www.linkedin.com/in/szeinali  ## your linkedin account url
+# dribbble: http://www.dribble.com  ## you dribbble account url
+# foursquare: http://www.foursquare.com  ## your foursquare account url
 
 
 
