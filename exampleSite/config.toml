@@ -1,0 +1,22 @@
+languageCode = "en-us"
+title = "Aerial"
+baseurl = "http://szeinali.com"
+theme = "aerial"
+
+[params]
+  name = "Sahand Zeinali"
+  about = "Software Engineer &nbsp;&bull;&nbsp; Data Scientist &nbsp;&bull;&nbsp; Pizza Lover"
+  #copyright = "Untitled"
+  #Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
+  bg_scroll = ""
+  favicon = "favicon.ico"
+
+[[params.social]]
+  medium = "Github"
+  icon = "github"
+  link = "www.github.com/szeinali"
+
+[[params.social]]
+  medium = "LinkedIn"
+  icon = "linkedin"
+  link = "www.linkedin.com/in/szeinali"
