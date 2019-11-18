@@ -1,2 +1,2 @@
 theme: jekyll-theme-cayman
-background-image: url(background.jpeg)
+background-image: "background.jpeg"
