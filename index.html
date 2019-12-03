@@ -29,7 +29,7 @@
       <div class="col"></div>
 
       <div class="col">
-        <div id="typed"></div>
+        <span class="type"></span>
       <div class="col"></div>
     </div>
 
@@ -61,14 +61,14 @@
 
       jQuery(".links").fitText(1.2, {  minFontSize: '24px', maxFontSize: '45px' });
     </script>
-    <script>
-          $('document').ready(function(){
-           var typed = new Typed('#typed', {
+    <script type ="text/javascript">
+          $(function(){
+            $(".type").typed({
              strings: ["First sentence.", "Second sentence."],
              typeSpeed: 30,
              backSpeed: 30
-           });
-          });
+           })
+          }) 
     </script>
 
 
