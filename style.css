@@ -1,0 +1,44 @@
+body {
+  background-color: #f1f1f1;
+}
+
+.name {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 90px;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.bio {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: #333;
+}
+
+.links {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 45px;
+}
+
+a {
+    color: #888;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 750px) {
+    p.bio {
+        padding-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .links {
+        padding-top: 70px;
+    }
+}
