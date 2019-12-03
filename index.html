@@ -29,9 +29,7 @@
       <div class="col"></div>
 
       <div class="col">
-        <p class="bio">Software Engineer | Data Scientist</p>
-      </div>
-
+        <div id="typed"></div>
       <div class="col"></div>
     </div>
 
@@ -55,7 +53,6 @@
 
       <div class="col"></div> -->
     </div>
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="jquery.fittext.js"></script>
     <script>
@@ -63,6 +60,16 @@
 
       jQuery(".links").fitText(1.2, {  minFontSize: '24px', maxFontSize: '45px' });
     </script>
+    <script>
+          $('document').ready(function(){
+           var typed = new Typed('.element', {
+             strings: ["First sentence.", "Second sentence."],
+             typeSpeed: 30,
+             backSpeed: 30
+           });
+          });
+    </script>
+
 
   </body>
 
