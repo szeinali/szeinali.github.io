@@ -1,0 +1,50 @@
+{
+  "project": "sim2real-reach",
+  "entries": [
+    {
+      "id": "day0",
+      "date": "2026-10-31",
+      "title": "Day 0: Baseline and pipeline check",
+      "summary": "Before touching MuJoCo or a real robot arm, I built the smallest end-to-end loop: a simplified planar 2-link arm in numpy, a tiny MLP policy trained with Evolution Strategies, a fixed evaluation set of 200 targets, and exported metrics that this page renders. The point is to fix the evaluation protocol and data format now so every later result (GPU simulator, domain randomization, real hardware) is measured the same way.",
+      "takeaways": [
+        "Learned policy reaches <b>31%</b> success (≤2 cm) and a mean final error of <b>3.3 cm</b>, vs 19.4 cm for random actions. Learning works, and all 3 seeds agree.",
+        "A hand-written Jacobian-transpose controller hits <b>94%</b>. The learned policy is far from good yet, and that gap is now the number to close.",
+        "The learned policy actually scores a <i>higher</i> reward than the classical controller while succeeding 3× less often. The reward's effort penalty pays it to stop a few cm short. Reward and task metric disagree, so the reward gets fixed first.",
+        "Caveat: simplified dynamics (decoupled joints, linear damping, no gravity). This is a pipeline check, not a physics result."
+      ],
+      "visuals": [
+        { "type": "kpis", "src": "data/day0/metrics.json", "throughput_label": "Env steps / sec (2 CPU cores, numpy, batched)" },
+        {
+          "type": "learning_curve", "src": "data/day0/metrics.json", "metric": "success_rate", "y_label": "success rate (≤2 cm)",
+          "title": "Success rate during training",
+          "caption": "Fraction of the 200 held-out targets reached within 2 cm at the end of the 1 s episode. Thin lines are individual seeds.",
+          "why": "Steady climb, tight seed band: the training signal is real and reproducible. The plateau around 30%, far below the dashed classical line, says the bottleneck is the objective, not the optimizer's luck."
+        },
+        {
+          "type": "learning_curve", "src": "data/day0/metrics.json", "metric": "mean_return", "y_label": "mean episode return",
+          "title": "Episode return during training",
+          "caption": "Return = −(distance to target) − 0.05·‖torque‖², summed over 50 steps.",
+          "why": "By the end the learned policy's return matches, and slightly beats, the classical controller, even though its success rate is 3× lower. When return and success disagree like this, optimizing harder won't help. Change the reward."
+        },
+        {
+          "type": "dist_over_time", "src": "data/day0/distributions.json",
+          "title": "Distance to target within an episode",
+          "caption": "Mean over the 200 evaluation targets; shaded band is the 10th–90th percentile.",
+          "why": "Both controllers close distance at a similar rate for the first ~0.5 s. The difference is the last centimeters: the classical controller converges, the learned policy coasts. That points at fine-grained terminal control as the next thing to improve."
+        },
+        {
+          "type": "histogram", "src": "data/day0/distributions.json",
+          "title": "Where episodes end up",
+          "caption": "Distribution of final distance to target across the 200 evaluation episodes.",
+          "why": "The learned policy's mass sits mostly in the 1–5 cm range: it almost always gets close but rarely finishes. Random actions spread across the workspace. This shape is the before-picture for every later change."
+        },
+        {
+          "type": "arm_replay", "src": "data/day0/rollouts.json",
+          "title": "Policy replay across training",
+          "caption": "The same 6 held-out targets (green; the halo is the 2 cm success zone), replayed with policy checkpoints from different training iterations. Pick an iteration, or scrub time with the slider.",
+          "why": "At iteration 0 the arm spins aimlessly. By 200 it heads for the target. By 1200 it moves directly but parks just outside the halo, the same failure mode the charts above show, now visible."
+        }
+      ]
+    }
+  ]
+}

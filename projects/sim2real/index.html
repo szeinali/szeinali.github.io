@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+  <title>Sim-to-real reaching: project log</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav><a href="../../">Projects</a><a class="on" href="./">Sim-to-real project</a></nav>
+
+    <h1>Sim-to-real manipulation: project log</h1>
+    <p class="sub">Training a robot-arm policy in GPU-parallel simulation, making it robust with domain randomization, and transferring it to a real low-cost arm. Every result is measured with the same evaluation protocol and published here as it happens.</p>
+
+    <div class="card">
+      <h3>Roadmap</h3>
+      <ul class="clean roadmap">
+        <li><span class="status done">done</span><span><b>Day 0</b>: evaluation protocol, metrics schema, numpy baseline</span></li>
+        <li><span class="status next">next</span><span><b>Week 1</b>: MuJoCo reach task + PPO/SAC baseline; compare against Day 0 on the same metrics</span></li>
+        <li><span class="status">planned</span><span><b>Week 2</b>: GPU-parallel training (MJX / Isaac Lab); throughput scaling vs. number of envs</span></li>
+        <li><span class="status">planned</span><span><b>Week 3</b>: domain randomization (friction, mass, latency, camera) + ablation of what matters</span></li>
+        <li><span class="status">planned</span><span><b>Week 4</b>: transfer to a real SO-101 arm; sim vs. real success over repeated trials, failure analysis</span></li>
+      </ul>
+    </div>
+
+    <div id="log" data-manifest="entries.json"></div>
+
+    <footer>Code: <a href="https://github.com/szeinali/szeinali.github.io/tree/main/code/sim2real">code/sim2real</a>. Charts render from the JSON in <code>data/</code>, and every number is reproducible from the scripts.</footer>
+  </div>
+  <script src="../../assets/viz.js"></script>
+</body>
+</html>
